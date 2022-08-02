@@ -2,9 +2,9 @@ import { createContext,useState } from "react";
 export const PostContext=createContext(null)
 
 function Post({children}){
-    const[postDeatils,setPostDetails]=useState()
+    const[postDetails,setPostDetails]=useState()
     return(
-    <PostContext.Provider value={{postDeatils,setPostDetails}}>
+    <PostContext.Provider value={{postDetails,setPostDetails}}>
        {children} 
     </PostContext.Provider>
     )
